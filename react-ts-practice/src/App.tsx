@@ -5,6 +5,7 @@ import axios from "axios";
 import Card, { CardVariant } from "./components/Card";
 import UserList from "./components/UserList";
 import List from "./components/List";
+import EventsExample from "./components/EventsExample";
 
 //Types
 import { ITodo, IUser } from "./types/types";
@@ -52,6 +53,7 @@ function App() {
       >
         <button>Click Me</button>
       </Card>
+      <EventsExample />
       <List
         items={users}
         renderItem={(user: IUser) => <UserItem user={user} key={user.id} />}
